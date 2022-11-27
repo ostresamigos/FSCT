@@ -1,4 +1,19 @@
-import numpy as np
+try:
+    import os
+except:
+    print("Install os")
+    os.system('pip install os')
+else:
+    print("Module os imported!")
+
+try:
+    import numpy as np
+exception:
+    print("Install numpy")
+    os.system('pip install numpy')
+else:
+    print("Module numpy imported!")
+    
 import time
 import glob
 import random
