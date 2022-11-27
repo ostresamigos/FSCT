@@ -8,23 +8,71 @@ else:
 
 try:
     import numpy as np
-exception:
+except:
     print("Install numpy")
     os.system('pip install numpy')
 else:
     print("Module numpy imported!")
-    
-import time
-import glob
-import random
-import pandas as pd
-from copy import deepcopy
-import matplotlib
-from scipy import spatial
+
+try:
+    import time
+except:
+    print("Install time")
+    os.system('pip install time')
+else:
+    print("Module time imported!")    
+
+try:
+    import glob
+except:
+    print("Install glob")
+    os.system('pip install glob')
+else:
+    print("Module glob imported!")  
+
+try:
+    import random
+except:
+    print("Install random")
+    os.system('pip install random')
+else:
+    print("Module random imported!")  
+
+try:
+    import pandas as pd
+except:
+    print("Install pandas")
+    os.system('pip install pandas')
+else:
+    print("Module pandas imported!")
+
+try:
+    from copy import deepcopy
+except:
+    print("Install deepcopy")
+    os.system('pip install copy')
+else:
+    print("Module deepcopy imported!")
+
+try:
+    import matplotlib
+except:
+    print("Install matplotlib")
+    os.system('pip install matplotlib')
+else:
+    print("Module matplotlib imported!")
+
+try:
+    from scipy import spatial
+except:
+    print("Install scipy")
+    os.system('pip install scipy')
+else:
+    print("Module scipy imported!")
+
 from sklearn.neighbors import NearestNeighbors
 import threading
 from tools import load_file, save_file, make_folder_structure, subsample_point_cloud, low_resolution_hack_mode
-import os
 from multiprocessing import get_context
 
 
