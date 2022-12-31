@@ -366,7 +366,15 @@ Thanks to Susana Gonzalez Aracil, David Herries from Interpine Group Ltd (New Ze
 Muneri and Mohan Gurung from PF Olsen (Australia) Ltd. https://au.pfolsen.com/, who provided a number of the raw point
 clouds and plot measurements used during the development and validation of this tool.
 
+## Docker image
 
+A new docker image is built when a new PR is created.
+
+E.g.
+
+```bash
+docker build -t ostresamigos/fsct . 
+```
 
 ## References
 The deep learning component uses Pytorch https://pytorch.org/ and Pytorch-Geometric 
